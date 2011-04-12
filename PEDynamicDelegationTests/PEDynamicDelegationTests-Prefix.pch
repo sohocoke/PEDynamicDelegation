@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PEDynamicDelegationTests' target in the 'PEDynamicDelegationTests' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+#endif

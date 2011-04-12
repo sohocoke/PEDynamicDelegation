@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1390B7C81354F86100B8F780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7C71354F86100B8F780 /* UIKit.framework */; };
+		1390B7CA1354F86100B8F780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7C91354F86100B8F780 /* Foundation.framework */; };
+		1390B7CC1354F86100B8F780 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7CB1354F86100B8F780 /* CoreGraphics.framework */; };
+		1390B7D21354F86100B8F780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7D01354F86100B8F780 /* InfoPlist.strings */; };
+		1390B7D51354F86100B8F780 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7D41354F86100B8F780 /* main.m */; };
+		1390B7D81354F86100B8F780 /* PEDynamicDelegationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7D71354F86100B8F780 /* PEDynamicDelegationAppDelegate.m */; };
+		1390B7DC1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7DB1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m */; };
+		1390B7DF1354F86100B8F780 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7DD1354F86100B8F780 /* MainWindow_iPhone.xib */; };
+		1390B7E31354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7E21354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m */; };
+		1390B7E61354F86100B8F780 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7E41354F86100B8F780 /* MainWindow_iPad.xib */; };
+		1390B7ED1354F86200B8F780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7C71354F86100B8F780 /* UIKit.framework */; };
+		1390B7EE1354F86200B8F780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7C91354F86100B8F780 /* Foundation.framework */; };
+		1390B7EF1354F86200B8F780 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7CB1354F86100B8F780 /* CoreGraphics.framework */; };
+		1390B7F71354F86200B8F780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7F51354F86200B8F780 /* InfoPlist.strings */; };
+		1390B7FA1354F86200B8F780 /* PEDynamicDelegationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */; };
+		1390B7FC1354F86200B8F780 /* PEDynamicDelegationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1390B7F01354F86200B8F780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1390B7BA1354F86100B8F780 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1390B7C21354F86100B8F780;
+			remoteInfo = PEDynamicDelegation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1390B7C31354F86100B8F780 /* PEDynamicDelegation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PEDynamicDelegation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1390B7C71354F86100B8F780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1390B7C91354F86100B8F780 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1390B7CB1354F86100B8F780 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1390B7CF1354F86100B8F780 /* PEDynamicDelegation-Info.plist */ = {isa = PBXFileReference; path = "PEDynamicDelegation-Info.plist"; sourceTree = "<group>"; };
+		1390B7D11354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1390B7D31354F86100B8F780 /* PEDynamicDelegation-Prefix.pch */ = {isa = PBXFileReference; path = "PEDynamicDelegation-Prefix.pch"; sourceTree = "<group>"; };
+		1390B7D41354F86100B8F780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1390B7D61354F86100B8F780 /* PEDynamicDelegationAppDelegate.h */ = {isa = PBXFileReference; path = PEDynamicDelegationAppDelegate.h; sourceTree = "<group>"; };
+		1390B7D71354F86100B8F780 /* PEDynamicDelegationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEDynamicDelegationAppDelegate.m; sourceTree = "<group>"; };
+		1390B7DA1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = PEDynamicDelegationAppDelegate_iPhone.h; path = iPhone/PEDynamicDelegationAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1390B7DB1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PEDynamicDelegationAppDelegate_iPhone.m; path = iPhone/PEDynamicDelegationAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		1390B7DE1354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		1390B7E11354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.h */ = {isa = PBXFileReference; name = PEDynamicDelegationAppDelegate_iPad.h; path = iPad/PEDynamicDelegationAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1390B7E21354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PEDynamicDelegationAppDelegate_iPad.m; path = iPad/PEDynamicDelegationAppDelegate_iPad.m; sourceTree = "<group>"; };
+		1390B7E51354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		1390B7EC1354F86200B8F780 /* PEDynamicDelegationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PEDynamicDelegationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1390B7F41354F86200B8F780 /* PEDynamicDelegationTests-Info.plist */ = {isa = PBXFileReference; path = "PEDynamicDelegationTests-Info.plist"; sourceTree = "<group>"; };
+		1390B7F61354F86200B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1390B7F81354F86200B8F780 /* PEDynamicDelegationTests-Prefix.pch */ = {isa = PBXFileReference; path = "PEDynamicDelegationTests-Prefix.pch"; sourceTree = "<group>"; };
+		1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEDynamicDelegationTests.h; sourceTree = "<group>"; };
+		1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEDynamicDelegationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1390B7C01354F86100B8F780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7C81354F86100B8F780 /* UIKit.framework in Frameworks */,
+				1390B7CA1354F86100B8F780 /* Foundation.framework in Frameworks */,
+				1390B7CC1354F86100B8F780 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1390B7E81354F86200B8F780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7ED1354F86200B8F780 /* UIKit.framework in Frameworks */,
+				1390B7EE1354F86200B8F780 /* Foundation.framework in Frameworks */,
+				1390B7EF1354F86200B8F780 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1390B7B81354F86100B8F780 = {
+			isa = PBXGroup;
+			children = (
+				1390B7CD1354F86100B8F780 /* PEDynamicDelegation */,
+				1390B7F21354F86200B8F780 /* PEDynamicDelegationTests */,
+				1390B7C61354F86100B8F780 /* Frameworks */,
+				1390B7C41354F86100B8F780 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1390B7C41354F86100B8F780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7C31354F86100B8F780 /* PEDynamicDelegation.app */,
+				1390B7EC1354F86200B8F780 /* PEDynamicDelegationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1390B7C61354F86100B8F780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7C71354F86100B8F780 /* UIKit.framework */,
+				1390B7C91354F86100B8F780 /* Foundation.framework */,
+				1390B7CB1354F86100B8F780 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1390B7CD1354F86100B8F780 /* PEDynamicDelegation */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7D61354F86100B8F780 /* PEDynamicDelegationAppDelegate.h */,
+				1390B7D71354F86100B8F780 /* PEDynamicDelegationAppDelegate.m */,
+				1390B7D91354F86100B8F780 /* iPhone */,
+				1390B7E01354F86100B8F780 /* iPad */,
+				1390B7CE1354F86100B8F780 /* Supporting Files */,
+			);
+			path = PEDynamicDelegation;
+			sourceTree = "<group>";
+		};
+		1390B7CE1354F86100B8F780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7CF1354F86100B8F780 /* PEDynamicDelegation-Info.plist */,
+				1390B7D01354F86100B8F780 /* InfoPlist.strings */,
+				1390B7D31354F86100B8F780 /* PEDynamicDelegation-Prefix.pch */,
+				1390B7D41354F86100B8F780 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1390B7D91354F86100B8F780 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7DA1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.h */,
+				1390B7DB1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m */,
+				1390B7DD1354F86100B8F780 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		1390B7E01354F86100B8F780 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7E11354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.h */,
+				1390B7E21354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m */,
+				1390B7E41354F86100B8F780 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		1390B7F21354F86200B8F780 /* PEDynamicDelegationTests */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */,
+				1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */,
+				1390B7F31354F86200B8F780 /* Supporting Files */,
+			);
+			path = PEDynamicDelegationTests;
+			sourceTree = "<group>";
+		};
+		1390B7F31354F86200B8F780 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1390B7F41354F86200B8F780 /* PEDynamicDelegationTests-Info.plist */,
+				1390B7F51354F86200B8F780 /* InfoPlist.strings */,
+				1390B7F81354F86200B8F780 /* PEDynamicDelegationTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1390B7C21354F86100B8F780 /* PEDynamicDelegation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1390B7FF1354F86200B8F780 /* Build configuration list for PBXNativeTarget "PEDynamicDelegation" */;
+			buildPhases = (
+				1390B7BF1354F86100B8F780 /* Sources */,
+				1390B7C01354F86100B8F780 /* Frameworks */,
+				1390B7C11354F86100B8F780 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PEDynamicDelegation;
+			productName = PEDynamicDelegation;
+			productReference = 1390B7C31354F86100B8F780 /* PEDynamicDelegation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1390B7EB1354F86200B8F780 /* PEDynamicDelegationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1390B8021354F86200B8F780 /* Build configuration list for PBXNativeTarget "PEDynamicDelegationTests" */;
+			buildPhases = (
+				1390B7E71354F86200B8F780 /* Sources */,
+				1390B7E81354F86200B8F780 /* Frameworks */,
+				1390B7E91354F86200B8F780 /* Resources */,
+				1390B7EA1354F86200B8F780 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1390B7F11354F86200B8F780 /* PBXTargetDependency */,
+			);
+			name = PEDynamicDelegationTests;
+			productName = PEDynamicDelegationTests;
+			productReference = 1390B7EC1354F86200B8F780 /* PEDynamicDelegationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1390B7BA1354F86100B8F780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = TheFunHouseProject;
+			};
+			buildConfigurationList = 1390B7BD1354F86100B8F780 /* Build configuration list for PBXProject "PEDynamicDelegation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1390B7B81354F86100B8F780;
+			productRefGroup = 1390B7C41354F86100B8F780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1390B7C21354F86100B8F780 /* PEDynamicDelegation */,
+				1390B7EB1354F86200B8F780 /* PEDynamicDelegationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1390B7C11354F86100B8F780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7D21354F86100B8F780 /* InfoPlist.strings in Resources */,
+				1390B7DF1354F86100B8F780 /* MainWindow_iPhone.xib in Resources */,
+				1390B7E61354F86100B8F780 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1390B7E91354F86200B8F780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7F71354F86200B8F780 /* InfoPlist.strings in Resources */,
+				1390B7FA1354F86200B8F780 /* PEDynamicDelegationTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1390B7EA1354F86200B8F780 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1390B7BF1354F86100B8F780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7D51354F86100B8F780 /* main.m in Sources */,
+				1390B7D81354F86100B8F780 /* PEDynamicDelegationAppDelegate.m in Sources */,
+				1390B7DC1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m in Sources */,
+				1390B7E31354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1390B7E71354F86200B8F780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1390B7FC1354F86200B8F780 /* PEDynamicDelegationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1390B7F11354F86200B8F780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1390B7C21354F86100B8F780 /* PEDynamicDelegation */;
+			targetProxy = 1390B7F01354F86200B8F780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1390B7D01354F86100B8F780 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1390B7D11354F86100B8F780 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1390B7DD1354F86100B8F780 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1390B7DE1354F86100B8F780 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1390B7E41354F86100B8F780 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1390B7E51354F86100B8F780 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		1390B7F51354F86200B8F780 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1390B7F61354F86200B8F780 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1390B7FD1354F86200B8F780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1390B7FE1354F86200B8F780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1390B8001354F86200B8F780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEDynamicDelegation/PEDynamicDelegation-Prefix.pch";
+				INFOPLIST_FILE = "PEDynamicDelegation/PEDynamicDelegation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1390B8011354F86200B8F780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEDynamicDelegation/PEDynamicDelegation-Prefix.pch";
+				INFOPLIST_FILE = "PEDynamicDelegation/PEDynamicDelegation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1390B8031354F86200B8F780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PEDynamicDelegation.app/PEDynamicDelegation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEDynamicDelegationTests/PEDynamicDelegationTests-Prefix.pch";
+				INFOPLIST_FILE = "PEDynamicDelegationTests/PEDynamicDelegationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1390B8041354F86200B8F780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PEDynamicDelegation.app/PEDynamicDelegation";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PEDynamicDelegationTests/PEDynamicDelegationTests-Prefix.pch";
+				INFOPLIST_FILE = "PEDynamicDelegationTests/PEDynamicDelegationTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1390B7BD1354F86100B8F780 /* Build configuration list for PBXProject "PEDynamicDelegation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1390B7FD1354F86200B8F780 /* Debug */,
+				1390B7FE1354F86200B8F780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1390B7FF1354F86200B8F780 /* Build configuration list for PBXNativeTarget "PEDynamicDelegation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1390B8001354F86200B8F780 /* Debug */,
+				1390B8011354F86200B8F780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1390B8021354F86200B8F780 /* Build configuration list for PBXNativeTarget "PEDynamicDelegationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1390B8031354F86200B8F780 /* Debug */,
+				1390B8041354F86200B8F780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1390B7BA1354F86100B8F780 /* Project object */;
+}

@@ -21,8 +21,9 @@
 		1390B7EE1354F86200B8F780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7C91354F86100B8F780 /* Foundation.framework */; };
 		1390B7EF1354F86200B8F780 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1390B7CB1354F86100B8F780 /* CoreGraphics.framework */; };
 		1390B7F71354F86200B8F780 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7F51354F86200B8F780 /* InfoPlist.strings */; };
-		1390B7FA1354F86200B8F780 /* PEDynamicDelegationTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */; };
-		1390B7FC1354F86200B8F780 /* PEDynamicDelegationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */; };
+		1390B80B1354F8B900B8F780 /* PEDynamicDelegationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B80A1354F8B900B8F780 /* PEDynamicDelegationTests.m */; };
+		1390B8121356699600B8F780 /* NSObject+PEDynamicDelegation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B8111356699500B8F780 /* NSObject+PEDynamicDelegation.m */; };
+		1390B81513566C4700B8F780 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1390B81413566C4700B8F780 /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,24 +41,28 @@
 		1390B7C71354F86100B8F780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1390B7C91354F86100B8F780 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1390B7CB1354F86100B8F780 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1390B7CF1354F86100B8F780 /* PEDynamicDelegation-Info.plist */ = {isa = PBXFileReference; path = "PEDynamicDelegation-Info.plist"; sourceTree = "<group>"; };
+		1390B7CF1354F86100B8F780 /* PEDynamicDelegation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PEDynamicDelegation-Info.plist"; sourceTree = "<group>"; };
 		1390B7D11354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1390B7D31354F86100B8F780 /* PEDynamicDelegation-Prefix.pch */ = {isa = PBXFileReference; path = "PEDynamicDelegation-Prefix.pch"; sourceTree = "<group>"; };
+		1390B7D31354F86100B8F780 /* PEDynamicDelegation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PEDynamicDelegation-Prefix.pch"; sourceTree = "<group>"; };
 		1390B7D41354F86100B8F780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1390B7D61354F86100B8F780 /* PEDynamicDelegationAppDelegate.h */ = {isa = PBXFileReference; path = PEDynamicDelegationAppDelegate.h; sourceTree = "<group>"; };
+		1390B7D61354F86100B8F780 /* PEDynamicDelegationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEDynamicDelegationAppDelegate.h; sourceTree = "<group>"; };
 		1390B7D71354F86100B8F780 /* PEDynamicDelegationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEDynamicDelegationAppDelegate.m; sourceTree = "<group>"; };
-		1390B7DA1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = PEDynamicDelegationAppDelegate_iPhone.h; path = iPhone/PEDynamicDelegationAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		1390B7DA1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PEDynamicDelegationAppDelegate_iPhone.h; path = iPhone/PEDynamicDelegationAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		1390B7DB1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PEDynamicDelegationAppDelegate_iPhone.m; path = iPhone/PEDynamicDelegationAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		1390B7DE1354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		1390B7E11354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.h */ = {isa = PBXFileReference; name = PEDynamicDelegationAppDelegate_iPad.h; path = iPad/PEDynamicDelegationAppDelegate_iPad.h; sourceTree = "<group>"; };
+		1390B7E11354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PEDynamicDelegationAppDelegate_iPad.h; path = iPad/PEDynamicDelegationAppDelegate_iPad.h; sourceTree = "<group>"; };
 		1390B7E21354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PEDynamicDelegationAppDelegate_iPad.m; path = iPad/PEDynamicDelegationAppDelegate_iPad.m; sourceTree = "<group>"; };
 		1390B7E51354F86100B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
 		1390B7EC1354F86200B8F780 /* PEDynamicDelegationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PEDynamicDelegationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1390B7F41354F86200B8F780 /* PEDynamicDelegationTests-Info.plist */ = {isa = PBXFileReference; path = "PEDynamicDelegationTests-Info.plist"; sourceTree = "<group>"; };
+		1390B7F41354F86200B8F780 /* PEDynamicDelegationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PEDynamicDelegationTests-Info.plist"; sourceTree = "<group>"; };
 		1390B7F61354F86200B8F780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1390B7F81354F86200B8F780 /* PEDynamicDelegationTests-Prefix.pch */ = {isa = PBXFileReference; path = "PEDynamicDelegationTests-Prefix.pch"; sourceTree = "<group>"; };
-		1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEDynamicDelegationTests.h; sourceTree = "<group>"; };
-		1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEDynamicDelegationTests.m; sourceTree = "<group>"; };
+		1390B7F81354F86200B8F780 /* PEDynamicDelegationTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PEDynamicDelegationTests-Prefix.pch"; sourceTree = "<group>"; };
+		1390B8091354F8B900B8F780 /* PEDynamicDelegationTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PEDynamicDelegationTests.h; sourceTree = "<group>"; };
+		1390B80A1354F8B900B8F780 /* PEDynamicDelegationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PEDynamicDelegationTests.m; sourceTree = "<group>"; };
+		1390B8101356699500B8F780 /* NSObject+PEDynamicDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PEDynamicDelegation.h"; sourceTree = "<group>"; };
+		1390B8111356699500B8F780 /* NSObject+PEDynamicDelegation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PEDynamicDelegation.m"; sourceTree = "<group>"; };
+		1390B81313566C4700B8F780 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRSwizzle.h; path = ../../public/jrswizzle/JRSwizzle.h; sourceTree = "<group>"; };
+		1390B81413566C4700B8F780 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRSwizzle.m; path = ../../public/jrswizzle/JRSwizzle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +111,8 @@
 		1390B7C61354F86100B8F780 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1390B81313566C4700B8F780 /* JRSwizzle.h */,
+				1390B81413566C4700B8F780 /* JRSwizzle.m */,
 				1390B7C71354F86100B8F780 /* UIKit.framework */,
 				1390B7C91354F86100B8F780 /* Foundation.framework */,
 				1390B7CB1354F86100B8F780 /* CoreGraphics.framework */,
@@ -116,6 +123,8 @@
 		1390B7CD1354F86100B8F780 /* PEDynamicDelegation */ = {
 			isa = PBXGroup;
 			children = (
+				1390B8101356699500B8F780 /* NSObject+PEDynamicDelegation.h */,
+				1390B8111356699500B8F780 /* NSObject+PEDynamicDelegation.m */,
 				1390B7D61354F86100B8F780 /* PEDynamicDelegationAppDelegate.h */,
 				1390B7D71354F86100B8F780 /* PEDynamicDelegationAppDelegate.m */,
 				1390B7D91354F86100B8F780 /* iPhone */,
@@ -159,8 +168,8 @@
 		1390B7F21354F86200B8F780 /* PEDynamicDelegationTests */ = {
 			isa = PBXGroup;
 			children = (
-				1390B7F91354F86200B8F780 /* PEDynamicDelegationTests.h */,
-				1390B7FB1354F86200B8F780 /* PEDynamicDelegationTests.m */,
+				1390B8091354F8B900B8F780 /* PEDynamicDelegationTests.h */,
+				1390B80A1354F8B900B8F780 /* PEDynamicDelegationTests.m */,
 				1390B7F31354F86200B8F780 /* Supporting Files */,
 			);
 			path = PEDynamicDelegationTests;
@@ -257,7 +266,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1390B7F71354F86200B8F780 /* InfoPlist.strings in Resources */,
-				1390B7FA1354F86200B8F780 /* PEDynamicDelegationTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +296,8 @@
 				1390B7D81354F86100B8F780 /* PEDynamicDelegationAppDelegate.m in Sources */,
 				1390B7DC1354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPhone.m in Sources */,
 				1390B7E31354F86100B8F780 /* PEDynamicDelegationAppDelegate_iPad.m in Sources */,
+				1390B8121356699600B8F780 /* NSObject+PEDynamicDelegation.m in Sources */,
+				1390B81513566C4700B8F780 /* JRSwizzle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1390B7FC1354F86200B8F780 /* PEDynamicDelegationTests.m in Sources */,
+				1390B80B1354F8B900B8F780 /* PEDynamicDelegationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

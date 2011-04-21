@@ -1,0 +1,17 @@
+* What?
+PEDynamicDelegation contains a category for NSObject that allow the user to:
+- mimic Ruby mixins by allowing class (a) to 'mix in' another existing class (b), so class (a) will appear to 'inherit' all operations from class (b), but with its class hierarchy unchanged;
+- mimic Javascript prototypes by allowing an instance (c) to have a dynamic delegate (d), a prototype-like object that will be delegated all messages not originally understood by instance (c).
+
+* Why?
+- I got tired of all the typing required to compose behaviour in Objective-C. To delegate one operation to a collaborating instance, you have to declare an ivar, instantiate an object and assign it, define a method to make the delegating call, and memory-manage the collaborator; all of this became too repetitive for my taste so I began missing Ruby mixins.
+- It was entertaining to devise and implement a hack that allows extension of modules without a change in taxonomy of an existing system.
+
+* Example?
+Consult the tests for now.
+TODO
+
+* Caveats?
+- Be warned that the meaning of 'self' is unchanged in methods for a class used as a delegate; i.e. it is still the pointer to the struct that represents the delegate, not the receiver object as with a Ruby mixin or a Javascript prototype. I'm considering adding an extra feature to change the meaning of self for delegates to match behaviour with mixins/prototypes, but I'm not sure yet if this is a good idea overall.
+- Compiler warnings when sending messages defined by (b)/(d), to instances of (a) or to (c): 
+TODO document options
